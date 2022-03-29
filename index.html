@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>Prueba de Select HTML | JC</title>
+				<link rel="stylesheet" href="">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		</head>
+		<body>
+				<h1>Pruebas de Seleccion con "Select"</h1>
+				<spam>Seleccione el Producto Favorito: </spam>
+				<br>
+				<select id="cbxProductos" onchange="seleccionarProductoDos();">
+						<option value="1">Gorra Nike</option>
+						<option value="2">Pantalon Adidas</option>
+						<option value="3">Chaqueta Umbro</option>
+						<option value="4">Tennis Puma</option>
+				</select>
+				<br>
+				<spam id="cbxResultado"></spam>
+				<br>
+				<p>Precios</p>
+				<select id="cbxPrecios" onchange="seleccionarPrecios();">
+						<option>Seleccione el Precio</option>
+						<option value="1">2500</option>
+						<option value="2">3500</option>
+						<option value="3">5000</option>
+						<option value="4">1000</option>
+				</select>
+				<br>
+				<p>Cantidad</p>
+				<input id="cantidad"/>
+				<p>Subtotal</p>
+				<input id="SubTotal"/>
+				<p>Iva</p>
+				<input id="iva"/>
+				<p>Total</p>
+				<input id="total"/>
+				<script src="javascript.js"></script>
+		</body>
+</html>
