@@ -61,3 +61,39 @@ form .user-details .input-box{
 .user-details .input-box input:focus, select:focus, .user-details .input-box input:valid, select:valid{
 		border-color: #9b59b6;
 }
+form .button{
+		height:45px;
+		margin: 45px 0;
+}
+form .button input{
+		height: 100%;
+		width: 100%;
+		outline: none;
+		color: #fff;
+		border: none;
+		font-size: 18px;
+		font-weight: 500;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+		background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+/*Responsive Page*/
+@media (max-width: 584px){
+		.container{
+				max-width: 100%;
+		}
+		form .user-details .input-box{
+				margin-bottom: 15px;
+				width: 100%;
+		}
+		.container form .user-details{
+				max-height: 300px;
+				overflow-y: scroll;
+		}
+		.user-details::-webkit-scrollbar{
+				width: 0;
+		}
+}
