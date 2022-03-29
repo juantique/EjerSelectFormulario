@@ -1,79 +1,58 @@
 <!DOCTYPE html>
 <html>
 		<head>
-				<title>Select HTML | JC</title>
-				<link rel="stylesheet" href="">
+				<title>Prueba de Select HTML | JC</title>
+				<link rel="stylesheet" href="style.css">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		</head>
 		<body>
-<<<<<<< HEAD
-				<h1>Formulario Etiqueta "Select" y Java Script</h1>
-				<spam>Seleccione el Producto Favorito: </spam>
-				<br>
-				<select id="cbxProductos" onchange="seleccionarProductoDos();">
-						<option value="1">Gorra Nike</option>
-						<option value="2">Pantalon Adidas</option>
-						<option value="3">Chaqueta Umbro</option>
-						<option value="4">Tennis Puma</option>
-				</select>
-				<br>
-				<spam id="cbxResultado"></spam>
-				<br>
-				<p>Precios</p>
-				<select id="cbxPrecios" onchange="seleccionarPrecios();">
-						<option>Seleccione el Precio</option>
-						<option value="1">2500</option>
-						<option value="2">3500</option>
-						<option value="3">5000</option>
-						<option value="4">1000</option>
-				</select>
-				<br>
-				<p>Cantidad</p>
-				<input id="cantidad"/>
-				<p>Subtotal</p>
-				<input id="SubTotal"/>
-				<p>Iva</p>
-				<input id="iva"/>
-				<p>Total</p>
-				<input id="total"/>
-				
-=======
-				<div>
-						<form>
-								<h1>Formulario de "Select" Java Script</h1>
-								<spam>Seleccione el Producto Favorito: </spam>
-								<br>
-								<select id="cbxProductos" onchange="seleccionarProductoDos();">
-										<option>Seleccione el Producto</option>
-										<option value="1">Gorra Nike</option>
-										<option value="2">Pantalon Adidas</option>
-										<option value="3">Chaqueta Umbro</option>
-										<option value="4">Tennis Puma</option>
-								</select>
-								<br>
-								<spam id="cbxResultado"></spam>
-								<br>
-								<p>Precios</p>
-								<select id="cbxPrecios" onchange="seleccionarPrecios();">
-										<option>Seleccione el Precio</option>
-										<option value="1">2500</option>
-										<option value="2">3500</option>
-										<option value="3">5000</option>
-										<option value="4">1000</option>
-								</select>
-								<br>
-								<p>Cantidad</p>
-								<input id="cantidad"/>
-								<p>Subtotal</p>
-								<input id="SubTotal"/>
-								<p>Iva</p>
-								<input id="iva"/>
-								<p>Total</p>
-								<input id="total"/>
-								<button name="enviar" type="button">Enviar</button>
+				<div class="container">
+						<div class="title">Catalogo de Venta</div>
+						<form action="#">
+								<div class="user-details">
+										<div class="input-box">
+												<spam class="details">Seleccione el Producto</spam>
+												<select id="cbxResultado" onchange="seleccionarProductoDos();" required>
+														<option>Seleccione el Producto</option>
+														<option value="1">Gorra Nike</option>
+														<option value="2">Pantalon Adidas</option>
+														<option value="3">Chaqueta Umbro</option>
+														<option value="4">Tenis Puma</option>
+												</select>
+												<spam id="cbxResultado"></spam>
+										</div>
+										<div class="input-box">
+												<spam class="details">Seleccione el Precio</spam>
+												<select id="cbxPrecios" onchange="seleccionarPrecios" required>
+														<option>Precios Disponibles</option>
+														<option value="1">350500</option>
+														<option value="2">485620</option>
+														<option value="3">780963</option>
+														<option value="4">256983</option>
+												</select>
+										</div>
+										<div class="input-box">
+												<spam class="details">Cantidad a Comprar</spam>
+												<input type="text" id="cantidad" placeholder="Cantidad" required>
+										</div>
+										<div class="input-box">
+												<spam class="details">SubTotal</spam>
+												<input id="Subtotal" type="text" placeholder="SubTotal de Venta" required>
+										</div>
+										<div class="input-box">
+												<spam class="details">Cobro del Iva</spam>
+												<input id="iva" type="text" placeholder="Costo del Iva" required>
+										</div>
+										<div class="input-box">
+												<spam class="details">Total a Pagar</spam>
+												<input id="total" type="text" placeholder="Total a Pagar" required>
+										</div>
+								</div>
+								<div class="button">
+										<input type="submit" value="Pagar">
+								</div>
 						</form>
 				</div>
->>>>>>> ramaHotfix
 				<script src="javascript.js"></script>
 		</body>
 </html>
